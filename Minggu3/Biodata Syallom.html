@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Multimedia - HTML 5</title>
+	</head>
+	<body>
+		<h2 align="left">Hasil Belajar Mandiri HTML 5</h2>
+		<h3 align="left">Syallom Christian</h3>
+		<h3 align="left">A11.2022.14378</h3>
+		<h2>Multimedia File - HTML 5</h2>
+		<p>
+		<button onclick="playVid()" type="button">Play Video</button>
+		<button onclick="stopVid()" type="button">Stop Video</button>
+		<button onclick="mute()" type="button">mute</button>
+		<button onclick="loop()" type="button">loop</button>
+		</p>
+		<video controls>
+			<source src="mov_bbb.mp4" type="video/mp4">
+			</video>
+	</body>
+	<script>var vid = document.getElementById("myVideo");
+
+	function playVid() {
+    vid.play();
+	} ;
+
+	function pauseVid() {
+    vid.pause();
+	} ;
+	
+	function mute() {
+	vid.muted = !vid.muted
+	} ;
+	
+	function loop () {
+	vid.loop = !vid.loop
+	} ;
+	</script>
+</html>
