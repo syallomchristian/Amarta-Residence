@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Video Player</title>
+    <style type="text/css">
+        body{
+          background-color: aqua;
+        }
+    </style>
+  </head>
+ 
+  <body>
+    <h2 style="color: black;" align="center">Hasil Belajar Mandiri HTML 5</h2>
+    <h3 style="color: black;" align="center">Nama : Syallom Christian</h3>
+    <h3 style="color: black;" align="center">Kelompok A11.4109</h3>
+    <h3 style="color: black;" align="center">NIM : A11.2022.14384</h3>
+    <center>
+      <video controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        </video>
+    </center>>
+
+    <p align="center">
+        <button onclick="playpause()" type="button"> play/pause</button>
+        <button onclick="mute()" type="button"> mute</button>
+        <button onclick="myFunction()" type="button"> Change Video</button><br>
+        <button onclick="control()" type="button">enable/disable control</button>
+        <button onclick="otomatis()" type="button"> Ulangi Video</button>
+    </p>
+  </body>
+
+  <script>
+    var vid = document.getElementById("video1");
+    function myFunction() { 
+    document.getElementById("animasi.mp4").src = "Media/Semarang.mp4";
+    document.getElementById("video1").load();
+    };
+
+    function playpause() { 
+       if (vid.paused) 
+        vid.play(); 
+        else 
+          vid.pause(); 
+        } ;
+
+     function mute() { 
+        vid.muted = !vid.muted
+     };
+
+     function control() { 
+        vid.controls = !vid.controls
+     };
+     
+      function otomatis(){
+        vid.loop = !vid.loop
+      };
+  </script>
+</html>
