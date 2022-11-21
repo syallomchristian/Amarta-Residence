@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Halaman Latihan CSS">
+    <meta name="author" content="PBW2022">
+    <title>Lat CSS</title>
+    <link rel="stylesheet" type="text/css" href="styleM9.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border: 1px solid grey
+            padding: 25px;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"]{
+            float: left;
+            pad: 10px;
+            border: solid gray;
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Bagian Judul Nduwur</h2>
+    </header> 
+    <main class="row"></main>
+        <nav class="col-3">
+            <aside>
+                <ul>
+                    <li><a href="#menu1"></a>Menu 1</li>
+                    <li><a href="#menu2"></a>Menu 2</li>
+                    <li><a href="#menu3"></a>Menu 3</li>
+                    <li><a href="#menu4"></a>Menu 4</li>
+                </ul>
+            </aside>
+        </nav>
+        <article class="col-9">
+            <p>Lorem ipsum do site color <span style="font-size:100px;">Lorem</span>Ipsum do site color aowkoawok</p>
+			<p>dtyftfvcrtygchtjhthjvyb <span style="font-size:80px;">ghwadathgxvwt</span>wffcwahtdgv</p>
+            <p>mbuh aku rak reti mbuh aku rak reti mbuh aku rak reti mbuh aku rak reti 
+                mbuh aku rak retimbuh aku rak retimbuh aku rak reti</p>
+            <p>mbuh aku rak reti mbuh aku rak reti mbuh aku rak reti mbuh aku rak reti 
+                 mbuh aku rak retimbuh aku rak retimbuh aku rak reti</p>
+            <div class="col-6">Block 1</div>
+            <div class="col-6">Blockkkkkkkk</div>
+        </article>
+        <footer class="col-12" style="text-align:center;">
+            <i>Copyright $copy; 2022 pbw</i>
+        </footer>
+    </main>
+</body>
+</html>
