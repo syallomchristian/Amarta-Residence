@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="allTA.css">
+    <title>FormPesan</title>
+    <style>
+
+        .boxform{
+            height: 600px;
+            width: 1200px;
+            background-color: white;
+            margin-left: 70px;
+            margin-right: auto;
+            margin-top: 15px;
+            margin-bottom: 40px;
+            border: solid black 2px;
+            border-radius: 30px;
+        }
+
+        .form{
+            margin-left: 25px;
+            margin-right: auto;
+            margin-top: 25px;
+        }
+
+        .formrs{
+            margin-left: auto;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a class="imglogo"><img src="Logo.png" style="width: 100px; height: 70px;" alt="logo"></a>
+            <li><a href="Contact.html" style="margin-right: 40px;"><u>Contact</u></a></li>
+            <li><a href="#"><u>Product</u></a></li>
+            <li><a href="Homepage.html"><u>Home</u></a></li>
+        </ul>
+    </nav>
+    <hr style="height:2px;border-width:0;color:black;background-color:black" width="100%">
+    <div class="boxkembali">
+        <font size="4"><h2 style="text-align: center; margin-top: 12px;"><a href="#">Kembali</a></h2></font>
+    </div>
+    <section class="boxform">
+        <form name="fmls" method="post" action="form.php" class="form">
+            <tr>
+                <td>Nama    : <br></td>
+                <td><input type="text" name="fnama" required> <br></td>
+            </tr>
+            <tr>
+                <td>No telepon<br></td>
+                <td><input type="number" name="ftlp" required><br></td>
+            </tr>
+            <tr>
+                <td>Email<br></td>
+                <td><input type="email" name="femail" required><br></td>
+            </tr>
+            <tr>
+                <td>Tanggal Pemasangan<br></td>
+                <td><input type="date" name="ftanggal" required><br></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </form>
+    </section>
+</body>
+</html>

@@ -45,6 +45,21 @@ nav ul li a{
     text-decoration: none;
 }
 
+.boxkembali{
+    height: 50px;
+    width: 130px;
+    background-color: white;
+    border: solid black 3px;
+    border-radius: 30px;
+     margin-left: 70px;
+     margin-top: 20px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+}
+
 .imglogo{
     width: 150px;
     height: 60px;
