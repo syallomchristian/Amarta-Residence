@@ -18,6 +18,7 @@
             margin-bottom: 40px;
             border: solid black 2px;
             border-radius: 30px;
+            
         }
 
         .form{
@@ -26,9 +27,10 @@
             margin-top: 25px;
         }
 
-        .formrs{
-            margin-left: auto;
-            margin-right: 10px;
+        .bfKecil{
+            width: 300px;
+            height: 200px;
+            background-color: aqua;
         }
     </style>
 </head>
@@ -46,30 +48,63 @@
         <font size="4"><h2 style="text-align: center; margin-top: 12px;"><a href="#">Kembali</a></h2></font>
     </div>
     <section class="boxform">
-        <form name="fmls" method="post" action="form.php" class="form">
-            <tr>
-                <td>Nama    : <br></td>
-                <td><input type="text" name="fnama" required> <br></td>
-            </tr>
-            <tr>
-                <td>No telepon<br></td>
-                <td><input type="number" name="ftlp" required><br></td>
-            </tr>
-            <tr>
-                <td>Email<br></td>
-                <td><input type="email" name="femail" required><br></td>
-            </tr>
-            <tr>
-                <td>Tanggal Pemasangan<br></td>
-                <td><input type="date" name="ftanggal" required><br></td>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
-        </form>
+        <div class="bfKecil" style="margin-left: 15px; margin-right: auto;">
+            <form name="fmls" method="post" action="form.php" class="form">
+                <tr>
+                    <td>Nama Pemesan : <br></td>
+                    <td><input type="text" name="fnama" required> <br></td>
+                </tr>
+                <tr>
+                    <td>No telepon:<br></td>
+                    <td><input type="number" name="ftlp" required><br></td>
+                </tr>
+                <tr>
+                    <td>Email:<br></td>
+                    <td><input type="email" name="femail" required><br></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Pemasangan<br></td>
+                    <td><input type="date" name="ftanggal" required><br></td>
+                </tr>
+                <tr>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </form>
+        </div>
+        <div class="bfKecil" style="margin-left: auto; margin-right: auto; margin-top: -225px;">
+            <form name="fmls" method="post" action="form.php" class="form">
+                <tr>
+                    <td>Type Pilihan<br></td>
+                    <td>
+                        <select name="fjenis" required>
+                            <option>Pilih</option>
+                            <option value="JenisA">Type A (Khusus perumahan)</option>
+                            <option value="JenisB">Type B (Khusus perusahaan kecil)</option>
+                            <option value="JenisC">Type C (Khusus Perkantoran)</option>
+                            <br></select>
+                    <br></td>
+                </tr>
+                <tr>
+                    <td>Alamat Pemasangan</td>
+                    <td><textarea name="falamat" cols="40" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </form>
+        </div>
     </section>
 </body>
 </html>
