@@ -18,7 +18,7 @@ nav {
 
 nav ul {
    background:white;
-   padding: 0 5px;
+   padding: 0 0px;
    list-style: none;
    position: relative;
    display: inline-table;
@@ -45,6 +45,10 @@ nav ul li a{
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+  }
+
 .boxkembali{
     height: 50px;
     width: 130px;
@@ -53,11 +57,69 @@ nav ul li a{
     border-radius: 30px;
     margin-left: 70px;
     margin-top: 20px;
+    text-align: center;
+
+}
+
+.boxpesan{
+    height: 60px;
+    width: 150px;
+    margin-right: 400px;
+    margin-left: auto;
+    background-color: white;
+    border: solid black 3px;
+    border-radius: 30px;
+    float: right;
+    position: relative;
+    display: block;
+    text-align: center;
+    
+}
+
+.boxnamaproduct{
+    width: 65%;
+    height: 120px;
+    margin-left: 70px;
+    margin-top: 25px;
+    background-color: grey;
+    border: solid 2px black;
+    text-align: center;
+    font-size: 45px;
+}
+
+.img_cctv{
+    width: 300px;
+    height: 300px;
+}
+
+.imgbox{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: solid black 1px;
+    margin-inline: 35px; 
+    float: right;
+    margin-left: auto;
+    margin-right: 90px;
+}
+
+.boxdescproduct{
+    width: 65%;
+    height: 400px;
+    margin-left: 70px;
+    background-color: white;
+    border: solid 2px black;
+    text-align: left;
 }
 
 footer{
-    text-align: center;
-    color: white;
+    text-align: center!important;
+    color: black;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    background-color: white;
+    margin-top: 100px;
 }
 
 .imglogo{
